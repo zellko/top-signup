@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/242af603c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="l-panel">
+        <div class="logo">
+            <i class="fa-solid fa-2xl fa-person-running"></i>
+            <h1>RunningAcademy</h1>
+        </div>
+        <div class="shoutout">
+            Photo by <a href="https://unsplash.com/@jakubkriz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jakub Kriz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+        </div>
+    </div>
+    <div class="r-panel">
+        <div class="text">
+            <h2>This is not a real online service! But anyway, subscribe to our <span class="highlight">Coaching plateform</span> and <span class="highlight">Run</span> towards your dreams with us!</h2>
+            <br>
+            <h2>You know you want to!</h2>
+        </div>
+        <form action="/index.html" method="post" class="form">
+            <div class="form-header">
+                <h2>Let's do this!</h2>
+            </div>
+            <div class="form-fields">
+
+                <div class="form-column">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" placeholder=" ">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="password">PASSWORD*</label>
+                    <input type="password" name="password" id="password" placeholder=" " pattern="(?:\w{6,})" required>
+                    <ul>
+                        <li>Minimum 6 characters</li>
+                        <li>A number</li>
+                        <li>A capital letter</li>
+                    </ul>
+                </div>
+
+                <div class="form-column">
+                    <label for="firstName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder=" ">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="0123456789" pattern="\d{10}">
+                    <label for="passwordConfirm">CONFIRM PASSWORD*</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " required>
+                    <ul>
+                        <li>Both passwords match</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="./index.html">Log In</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
