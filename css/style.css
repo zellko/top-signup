@@ -49,10 +49,10 @@ a:hover {
 }
 
 input {
-    margin-bottom: 16px;
     padding: 4px 0 4px 32px;
     font-size: var(--txt-font-size);
     color: var(--bg-color);
+    border: 0;
 }
 
 label {
@@ -77,7 +77,7 @@ button:hover {
 
 ul {
     display: none;
-    margin: 0 0 16px 0;
+    margin: 16px 0 0 0;
     list-style-type: none;
     color: #a36271;
 }
@@ -148,22 +148,27 @@ RIGHT PANEL ELEMENTS
     flex-direction: column;
 }
 
-.form>div {
-    padding: 16px 0 16px 3vw;
-}
-
-.form-fields,
+.form-row,
 .form-header {
     display: flex;
     background-color: var(--bg-color-lighter);
 }
 
-.form-fields {
-    flex-wrap: wrap;
-    padding-top: 24px;
-    /* offset-x | offset-y | blur-radius | color */
+.form-header {
+    padding: 16px 0 0 3vw;
+}
+
+.form-row {
+    padding: 16px 0 0 3vw;
+}
+
+.form-row+.form-row+.form-row {
+    padding: 16px 0 16px 3vw;
     box-shadow: 0px 5px 5px var(--accent-color);
-    margin: 0 0 36px 0;
+}
+
+.form-submit {
+    padding: 32px 0 0 3vw;
 }
 
 .form-column {
@@ -226,11 +231,11 @@ input:not(:placeholder-shown):required:invalid {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 1245px) {
+@media only screen and (min-width: 800px) {
     body {
         display: flex;
         flex-direction: row;
-        height: 100vh;
+        height: max(100vh, 50rem);
     }
     .l-panel,
     .r-panel {

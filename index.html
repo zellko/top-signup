@@ -32,13 +32,29 @@
             <div class="form-header">
                 <h2>Let's do this!</h2>
             </div>
-            <div class="form-fields">
 
+            <div class="form-row">
                 <div class="form-column">
                     <label for="firstName">FIRST NAME</label>
                     <input type="text" name="firstName" id="firstName" placeholder=" ">
+                </div>
+                <div class="form-column">
+                    <label for="firstName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder=" ">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
                     <label for="email">EMAIL*</label>
                     <input type="email" name="email" id="email" placeholder=" " required>
+                </div>
+                <div class="form-column">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="0123456789" pattern="\d{10}">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
                     <label for="password">PASSWORD*</label>
                     <input type="password" name="password" id="password" placeholder=" " pattern="(?:\w{6,})" required>
                     <ul>
@@ -47,12 +63,7 @@
                         <li>A capital letter</li>
                     </ul>
                 </div>
-
                 <div class="form-column">
-                    <label for="firstName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName" placeholder=" ">
-                    <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="0123456789" pattern="\d{10}">
                     <label for="passwordConfirm">CONFIRM PASSWORD*</label>
                     <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " required>
                     <ul>
@@ -61,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="submit">
+            <div class="form-submit">
                 <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="./index.html">Log In</a></p>
             </div>
