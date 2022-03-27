@@ -28,7 +28,7 @@
             <br>
             <h2>You know you want to!</h2>
         </div>
-        <form action="/index.html" method="post" class="form">
+        <form action="./index.html" method="post" class="form">
             <div class="form-header">
                 <h2>Let's do this!</h2>
             </div>
@@ -56,7 +56,7 @@
             <div class="form-row">
                 <div class="form-column">
                     <label for="password">PASSWORD*</label>
-                    <input type="password" name="password" id="password" placeholder=" " pattern="(?:\w{6,})" required>
+                    <input type="password" name="password" id="password" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$" required>
                     <ul>
                         <li class="pw-length">Minimum 6 characters</li>
                         <li class="pw-number">A number</li>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="form-column">
                     <label for="passwordConfirm">CONFIRM PASSWORD*</label>
-                    <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " required>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$" required>
                     <ul>
                         <li class="pw-match">Both passwords match</li>
                     </ul>
@@ -77,6 +77,8 @@
                 <p>Already have an account? <a href="./index.html">Log In</a></p>
             </div>
         </form>
+
+        <a class="github-link" href="https://github.com/zellko"><i class="fa-brands fa-github fa-2xl"></i></a>
     </div>
 </body>
 

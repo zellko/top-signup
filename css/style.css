@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    font-size: calc(16px + 0.7rem);
+    font-size: calc(16px + 1.2rem);
     padding: 24px 0 24px 16px;
 }
 
@@ -90,6 +90,7 @@ ul {
 .r-panel {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 
@@ -98,7 +99,6 @@ LEFT PANEL ELEMENTS
 ********************************/
 
 .l-panel {
-    position: relative;
     align-items: center;
     background-image: url("../img/jakub-kriz-3FFEdm8TOek-unsplash.jpg");
     background-repeat: no-repeat;
@@ -234,6 +234,17 @@ input:not(:placeholder-shown):required:invalid {
 
 
 /********************************
+Github Link
+********************************/
+
+.github-link {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+
+/********************************
 JS CLASS MANIPULATION
 ********************************/
 
@@ -247,11 +258,6 @@ JS CLASS MANIPULATION
         flex-direction: row;
         height: max(100vh, 60rem);
     }
-    .l-panel,
-    .r-panel {
-        display: flex;
-        flex-direction: column;
-    }
     .l-panel {
         position: relative;
         align-items: center;
@@ -261,6 +267,7 @@ JS CLASS MANIPULATION
         background-size: cover;
         background-position: center;
         padding-bottom: 0px;
+        min-width: 430px;
     }
     .logo {
         display: flex;
