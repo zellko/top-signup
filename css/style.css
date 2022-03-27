@@ -256,7 +256,37 @@ JS CLASS MANIPULATION
     body {
         display: flex;
         flex-direction: row;
-        height: max(100vh, 60rem);
+        height: auto;
+    }
+    .l-panel {
+        position: relative;
+        align-items: center;
+        flex: 1;
+        background-image: url("../img/jakub-kriz-3FFEdm8TOek-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 0px;
+        min-width: 430px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color);
+        opacity: 0.8;
+        width: 100%;
+        color: var(--txt-color);
+        position: absolute;
+        top: 25vh;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
     }
     .l-panel {
         position: relative;
