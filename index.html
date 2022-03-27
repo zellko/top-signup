@@ -58,16 +58,16 @@
                     <label for="password">PASSWORD*</label>
                     <input type="password" name="password" id="password" placeholder=" " pattern="(?:\w{6,})" required>
                     <ul>
-                        <li>Minimum 6 characters</li>
-                        <li>A number</li>
-                        <li>A capital letter</li>
+                        <li class="pw-length">Minimum 6 characters</li>
+                        <li class="pw-number">A number</li>
+                        <li class="pw-capital">A capital letter</li>
                     </ul>
                 </div>
                 <div class="form-column">
                     <label for="passwordConfirm">CONFIRM PASSWORD*</label>
                     <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " required>
                     <ul>
-                        <li>Both passwords match</li>
+                        <li class="pw-match">Both passwords match</li>
                     </ul>
                 </div>
             </div>
