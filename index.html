@@ -56,7 +56,7 @@
             <div class="form-row">
                 <div class="form-column">
                     <label for="password">PASSWORD*</label>
-                    <input type="password" name="password" id="password" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                    <input type="password" name="password" id="password" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d\W]{6,}$" required>
                     <ul>
                         <li class="pw-length">Minimum 6 characters</li>
                         <li class="pw-number">A number</li>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="form-column">
                     <label for="passwordConfirm">CONFIRM PASSWORD*</label>
-                    <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder=" " pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d\W]{6,}$" required>
                     <ul>
                         <li class="pw-match">Both passwords match</li>
                     </ul>
